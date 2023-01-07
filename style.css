@@ -80,8 +80,9 @@ img{
 
 #mainPragraph{
     color: var(--paragColor);
-    font-size: 1.1em;
+    font-size: .9em;
     margin-bottom: 4em;
+    line-height: 1.5;
 }
 
 .stats {
