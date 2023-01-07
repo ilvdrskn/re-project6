@@ -95,12 +95,51 @@ img{
     display: inline-block;
     margin-right:2.5em; 
     font-size: 1.2em;
-    color: var(--headingColor_statColor);
-}
-
-li::first-line{
     color: var(--statHead);
 }
 
-
+li::first-line{
+    color: var(--headingColor_statColor);
+    font-weight: bolder;
+}
 /* end textfield prepare */
+
+/* media query */
+@media screen and (max-width: 600px) {
+    .container{
+        padding: 2em;
+    }
+    .cardholder {
+        grid-template-columns: 1fr;
+        border-radius: 20px;
+        flex-basis: 80%;
+    }
+
+    .picholder{ 
+        order: -1;
+        border-bottom-right-radius: 0;
+    }
+
+    img{
+        border-top-left-radius: 20px;
+    }
+
+    .overlay {
+        border-top-left-radius: 20px;
+    }
+    
+    ul{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    li:last-child{
+        margin-left: -20px;
+    }
+
+
+}
+/* end media query */
